@@ -348,9 +348,6 @@ textarea {
 /**
  * Fix appearance for Firefox
  */
-[type="number"] {
-  -moz-appearance: textfield;
-}
 
 /**
  * Clickable labels
