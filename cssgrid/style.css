@@ -1,0 +1,35 @@
+.box {
+  background-color: #eee;
+  border: 1px solid #333;
+  padding: 10px;
+}
+.box1 {
+  grid-area: header;
+}
+.box2 {
+  grid-area: sidebar;
+}
+.box3 {
+  grid-area: main;
+}
+.box4 {
+  grid-area: footer;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 60px;
+  height: 100vh;
+}
+
+/*  
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: minmax(100px, auto) 200px;
+} */
